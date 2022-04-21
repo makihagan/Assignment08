@@ -70,19 +70,21 @@ console.log(favMovies[1]);
 // let movies = ["Pulp Fiction", "Forrest Gump", "E.T.", "50 First Date", "Nausicaa", "Spiderman No Way Home", "The Holiday"];
 // let leastFavMovies = ["Emoji Movie", "Hostel", "Bad Hair"];
 // movies = movies.concat(leastFavMovies).reverse().sort();
+// console.log('My Movie List - favorites and least favorites (reveresed and sorted order): ')
 // console.log(movies);
 
 //STEP 10
-// // -- This is NOT reversed and sorted array
 // let movies = ["Pulp Fiction", "Forrest Gump", "E.T.", "50 First Date", "Nausicaa", "Spiderman No Way Home", "The Holiday"];
 // let leastFavMovies = ["Emoji Movie", "Hostel", "Bad Hair"];
 // movies = movies.concat(leastFavMovies).reverse().sort();
+// console.log('The last item in the array (reveresed and sorted order): ');
 // console.log(movies.pop());
 
 //STEP 11
 // let movies = ["Pulp Fiction", "Forrest Gump", "E.T.", "50 First Date", "Nausicaa", "Spiderman No Way Home", "The Holiday"];
 // let leastFavMovies = ["Emoji Movie", "Hostel", "Bad Hair"];
 // movies = movies.concat(leastFavMovies).reverse().sort();
+// console.log('The first item in the array (reveresed and sorted order): ');
 // console.log(movies.shift());
 
 //STEP 12
@@ -92,7 +94,8 @@ console.log(favMovies[1]);
 // movies.splice(1, 1, "Demon Slayer");
 // movies.splice(3, 1, "The Usual Suspects");
 // movies.splice(5, 1, "The Conjuring");
-// console.log(movies)
+// console.log('Removed my least favorites and switched with other my favorites: ');
+// console.log(movies);
 
 //STEP 13
 // let movies = [["Pulp Fiction", 1],["Forest Gump", 2], ["E.T.", 3], ["50 First Date", 4], ["Nausicaa", 5]];
