@@ -18,10 +18,7 @@ console.log(favMovies[1]);
 // movies[2] = "E.T.";
 // movies[3] = "50 First Date";
 // movies[4] = "Nausicaa";
-// let addMovies = movies.push("Spiderman No Way Home");
-// // -- since push() will only return the length of array,
-// // -- it will also overwrite the array to length
-// // -- but this way, I can add with push and keep the array
+// movies.splice(2, 0, "Spiderman No Way Home");
 // console.log(movies.length);
 // console.log(movies);
 
@@ -52,16 +49,11 @@ console.log(favMovies[1]);
 // }
 
 //STEP 8
-// // -- I wasn't sure if you wanted us to display 
-// // -- only 3 of 7 movies like the example coded to 
-// // -- so I purposely display only 3 out of 7 movies
-// // -- from the array here.
-
 // let movies = ["Pulp Fiction", "Forrest Gump", "E.T.", "50 First Date", "Nausicaa", "Spiderman No Way Home", "The Holiday"];
 // let leastFavMovies = ["Emoji Movie", "Hostel", "Bad Hair"];
 // console.log('Movies I like:');
 // console.log('');
-// for (let i = 0; i < 3; i++) {
+// for (let i = 0; i < movies.length; i++) {
 //         console.log(movies[i]);
 // }
 // console.log('...');
@@ -77,54 +69,30 @@ console.log(favMovies[1]);
 //STEP 9
 // let movies = ["Pulp Fiction", "Forrest Gump", "E.T.", "50 First Date", "Nausicaa", "Spiderman No Way Home", "The Holiday"];
 // let leastFavMovies = ["Emoji Movie", "Hostel", "Bad Hair"];
-// movies = movies.concat(leastFavMovies);
-// console.log(movies.reverse().sort());
+// movies = movies.concat(leastFavMovies).reverse().sort();
+// console.log(movies);
 
 //STEP 10
-// // -- I copied only arrays from Step 9
-// // -- So here, reverse and sort would NOT be applied...
+// // -- This is NOT reversed and sorted array
 // let movies = ["Pulp Fiction", "Forrest Gump", "E.T.", "50 First Date", "Nausicaa", "Spiderman No Way Home", "The Holiday"];
 // let leastFavMovies = ["Emoji Movie", "Hostel", "Bad Hair"];
-// movies = movies.concat(leastFavMovies);
-// console.log(movies.pop());
-
-// // -- in case you want the result to be from reversed and sorted;
-// console.log('')
-// console.log('Result with reversed and sorted list:')
-// movies.reverse().sort();
+// movies = movies.concat(leastFavMovies).reverse().sort();
 // console.log(movies.pop());
 
 //STEP 11
 // let movies = ["Pulp Fiction", "Forrest Gump", "E.T.", "50 First Date", "Nausicaa", "Spiderman No Way Home", "The Holiday"];
 // let leastFavMovies = ["Emoji Movie", "Hostel", "Bad Hair"];
-// movies = movies.concat(leastFavMovies);
-// console.log(movies.shift());
-
-// // -- in case you want the result to be from reversed and sorted;
-// console.log('')
-// console.log('Result with reversed and sorted list:')
-// movies.reverse().sort();
+// movies = movies.concat(leastFavMovies).reverse().sort();
 // console.log(movies.shift());
 
 //STEP 12
-// // -- I didn't understand this question very well...
-// // -- so I broke it down...
 // let movies = ["Pulp Fiction", "Forrest Gump", "E.T.", "50 First Date", "Nausicaa", "Spiderman No Way Home", "The Holiday"];
 // let leastFavMovies = ["Emoji Movie", "Hostel", "Bad Hair"];
-// movies = movies.concat(leastFavMovies);
-// // -- Programmatically retrieve the least favorite movies???
-// let anotherMovieArray = movies.slice(7, 10);
-// // -- indiced...?
-// for (let i = 0; i < anotherMovieArray.length; i++) {
-//     console.log(`${i + 1}. ${anotherMovieArray[i]}`);
-// }
-// console.log('');
-// // -- then programmatically add my fav movies???
-// anotherMovieArray = anotherMovieArray.concat(movies.slice(0, 7));
-// // -- then indiced again???
-// for (let i = 0; i < anotherMovieArray.length; i++) {
-//     console.log(`${i + 1}. ${anotherMovieArray[i]}`);
-// }
+// movies = movies.concat(leastFavMovies).reverse().sort();
+// movies.splice(1, 1, "Demon Slayer");
+// movies.splice(3, 1, "The Usual Suspects");
+// movies.splice(5, 1, "The Conjuring");
+// console.log(movies)
 
 //STEP 13
 // let movies = [["Pulp Fiction", 1],["Forest Gump", 2], ["E.T.", 3], ["50 First Date", 4], ["Nausicaa", 5]];
@@ -136,7 +104,7 @@ console.log(favMovies[1]);
 // })
 
 //STEP 14
-// let employees = ['Zak', 'Jessica', 'Mark', 'Fred', 'Sally'];
+// let employees = ['ZAK', 'JESSICA', 'MARK', 'FRED', 'SALLY'];
 // console.log('Employees:')
 // console.log('');
 // let showEmployee = function (i) {
